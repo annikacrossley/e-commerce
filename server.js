@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes');
 
 // import sequelize connection
-const {Sequelize, DataTypes} = require('sequelize')
+const {Sequelize, DataTypes, Model} = require('sequelize')
 const sequelize = new Sequelize('thirteen_db', 'root', 'Teague50!', {
   host: 'localhost',
   dialect: 'mysql'
@@ -10,7 +10,8 @@ const sequelize = new Sequelize('thirteen_db', 'root', 'Teague50!', {
 
 //Models
 //Category
-const Categories = sequelize.define('Category', {
+class Category extends Model {}
+Category.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -24,7 +25,8 @@ const Categories = sequelize.define('Category', {
 })
 
 //Product
-const Products = sequelize.define('Product', {
+class Product extends Model {}
+Product.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -53,7 +55,8 @@ const Products = sequelize.define('Product', {
 })
 
 //Tag
-const Tags = sequelize.define('Tag', {
+class Tag extends Model {}
+Tag.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -66,7 +69,8 @@ const Tags = sequelize.define('Tag', {
 })
 
 //Product Tag
-const ProductsTags = sequelize.define('ProductTag', {
+class ProductTag extends Model {}
+ProductTag.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
