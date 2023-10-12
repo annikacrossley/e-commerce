@@ -1,5 +1,10 @@
 const express = require('express');
 const routes = require('./routes');
+const {Sequelize} = require('sequelize')
+const sequelize = new Sequelize('company_db', 'root', 'Teague50!', {
+  host: 'localhost',
+  dialect: 'mysql'
+})
 // import sequelize connection
 
 const app = express();
