@@ -1,6 +1,16 @@
-# e-commerce
+# e-commerce 
 
-<!-- GIVEN a functional Express.js API
+## Description
+
+This project was created to serve as a back-end for an e-commerce site. Sequelize is used to interact with the MySQL database to create, replace, update, and delete data. 
+
+## Installation
+
+You will need to install MySQL2, Sequelize, Express.js, and dotenv.
+
+## Usage 
+GIVEN a functional Express.js API
+
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
 
@@ -14,11 +24,14 @@ WHEN I open API GET routes in Insomnia Core for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database
+THEN I am able to successfully create, update, and delete data in my database. 
 
-You’ll need to use the MySQL2 and Sequelize packages to connect your Express.js API to a MySQL database and the dotenv package to use environment variables to store sensitive data, like your MySQL username, password, and database name.
+Please see the following video for a demo. 
 
-Use the schema.sql file in the db folder to create your database using MySQL shell commands. 
-Use environment variables to store sensitive data, like your MySQL username, password, and database name.
+## Video
 
- -->
+<a href="https://drive.google.com/file/d/1-mcQsZebxEc5zc7r59DNQjGroeXv9vE1/preview" width="640" height="480">View demo here.</a>
+
+## Credits
+
+Starter code provided by UW Bootcamp. 
